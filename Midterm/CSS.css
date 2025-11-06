@@ -1,0 +1,62 @@
+/* apply the background to both html and body to avoid overrides */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #A7CCED !important; /* <- your requested color */
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.header {
+  background-color: #304D6D;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.content {
+  padding: 20px;
+  background: rgba(255,255,255,0.85);
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.callout {
+  background-color: #f2f2f2;
+  border-left: 4px solid #ccc;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.callout a {
+  color: #ff0000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.accordion {
+  background-color: #eee;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.panel {
+  display: none;
+  background-color: #fafafa;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.gray-section {
+  background-color: #304D6D;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
