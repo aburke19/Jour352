@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Evolution</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+    <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+
+    <!-- TimelineJS -->
+    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            border-radius: 15px;
+            margin-bottom: 50px;
+            color: #fff;
+        }
+        .hero-section h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+        }
+        .hero-section p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #fff;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6em;
+            margin-bottom: 15px;
+        }
+
+        .juxtapose-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: wrap; 
+        }
+
+        .juxtapose {
+            max-width: 900px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .juxtapose-section div {
+            flex: 1;
+            min-width: 250px;  */
+        }
+
+        #timeline-embed {
+            max-width: 900px;
+            margin: 30px auto;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.3);
+            background-color: rgba(255,255,255,0.1);
+            height: 600px;
+        }
+
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #f0f0f0;
+            border-top: 1px solid rgba(255,255,255,0.3);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.5em; }
+            p { font-size: 1em; }
+            .juxtapose { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-section">
+        <h1>Technology Evolution: Smartphones</h1>
+        <p>Take a look at how technology has changed over time using interactive comparisons and timelines. Slide images and scroll to learn more about the evolution of devices.</p>
+    </header>
+
+    <section class="juxtapose-section">
+        <iframe 
+            frameborder="0" 
+            class="juxtapose" 
+            width="45%" 
+            height="700" 
+            style="max-width: 100%;" 
+            src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=a2a54104-c100-11f0-ba1b-0e6f42328d7d">
+        </iframe>
+        <div>
+            <h2>Smartphones: 2007 vs 2025</h2>
+            <strong>
+                <p>The first iPhone was released in 2007 and sold roughly 300,000 in the first weekend!</p>
+                <p>Apple has released a total of 51 different iPhone models, including the latest iPhone 17 lineup.</p>
+                <p>The iPhone 17 lineup, along with the iPhone Air, became available in September 2025.</p>
+            </strong>
+            <p>From 2007 to 2025, iPhones have evolved from a single revolutionary device into a sophisticated lineup, with dramatic differences in performance, features, and design. Key changes include the shift from a 3.5-inch display to larger, higher-resolution screens, the introduction of LTE and Wi-Fi, and the evolution from a single rear camera to professional-grade multiple camera systems. The physical design changed from a plastic body to premium materials like aluminum and glass, with new charging ports replacing the proprietary 30-pin connector.</p>
+        </div>
+    </section>
+
+    <section class="timeline-section">
+        <h2>Gaming Console Timeline</h2>
+        <div id="timeline-embed"></div>
+        <script type="text/javascript">
+            var timeline = new TL.Timeline('timeline-embed', 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT6ATD_DKPaGEa1VJ0QBN3uKp1DecLw2cF0X_UVddo3-NAGsVfdq8o2x6h99sIcAiUpI0oYqNmEFJjc/pubhtml'); 
+        </script>
+    </section>
+
+    <footer class="footer">
+        <p>Created by Alex Burke | &copy; 2025 </p>
+    </footer>
+
+</body>
+</html>
